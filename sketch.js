@@ -5,7 +5,6 @@ let amplitude = 75.0; // Height of wave
 let period = 500.0; // How many pixels before the wave repeats
 let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
-let fontsize = 12;
 let words = ["it", "comes", "and", "goes", "in", "waves"];
 
 function setup() {
@@ -13,14 +12,12 @@ function setup() {
   w = width + 16;
   dx = (TWO_PI / period) * xspacing;
   yvalues = new Array(floor(w / xspacing));
-  textSize(fontsize);
 }
 
 function draw() {
   background(0);
   calcWave();
   renderWave();
-  textAlign(LEFT);
 }
 
 function calcWave() {
