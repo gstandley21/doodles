@@ -1,1 +1,1 @@
-# waves-doodle
+# A collection of doodles made using p5.js
